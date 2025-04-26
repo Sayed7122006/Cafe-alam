@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alam Café</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Alam Café</h1>
+        <p>The best place to relax and enjoy your drinks</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#booking">Booking</a></li>
+        </ul>
+    </nav>
+
+    <section id="services">
+        <h2>Available Services</h2>
+        <ul>
+            <li>Room Booking</li>
+            <li>Variety of Drinks</li>
+            <li>High-speed Internet</li>
+            <li>Games and Rest Areas</li>
+        </ul>
+    </section>
+
+    <section id="pricing">
+        <h2>Pricing</h2>
+        <table>
+            <tr>
+                <th>Service</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Room Booking (Per Hour)</td>
+                <td>150 EGP</td>
+            </tr>
+            <tr>
+                <td>Coffee</td>
+                <td>30 EGP</td>
+            </tr>
+            <tr>
+                <td>Fresh Juice</td>
+                <td>40 EGP</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="booking">
+        <h2>Booking</h2>
+        <p>You can book your room or order your drink using the form below.</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="service">Service:</label>
+            <select id="service" name="service" required>
+                <option value="room">Room Booking</option>
+                <option value="coffee">Coffee</option>
+                <option value="juice">Fresh Juice</option>
+            </select>
+            <label for="time">Time:</label>
+            <input type="datetime-local" id="time" name="time" required>
+            <button type="submit">Confirm Booking</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Location: New Cairo, 5th Settlement</p>
+        <p>&copy; 2025 Alam Café. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
