@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Tajawal', Arial, sans-serif;
+  background: #faf7f4;
+  color: #333;
+  direction: rtl;
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #2c1810 0%, #6b3a2a 50%, #8b5a3a 100%);
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 12px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin-bottom: 25px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 35px;
+  background: #d4a96a;
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 700;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #b8894a;
+}
+
+/* Nav */
+nav {
+  background: #2c1810;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 20px;
+}
+
+nav ul li a {
+  color: #d4a96a;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 8px 20px;
+  border-radius: 20px;
+  transition: background 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+  background: #d4a96a;
+  color: #fff;
+}
+
+/* Sections */
+section {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+section h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #2c1810;
+  margin-bottom: 10px;
+}
+
+.section-desc {
+  text-align: center;
+  color: #888;
+  margin-bottom: 40px;
+  font-size: 1rem;
+}
+
+/* Menu categories */
+.category {
+  margin-bottom: 50px;
+}
+
+.category h3 {
+  font-size: 1.4rem;
+  color: #6b3a2a;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #d4a96a;
+  padding-bottom: 8px;
+}
+
+/* Cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-info {
+  padding: 15px;
+}
+
+.card-info h4 {
+  font-size: 1.05rem;
+  color: #2c1810;
+  margin-bottom: 6px;
+}
+
+.card-info p {
+  font-size: 0.85rem;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.price {
+  display: inline-block;
+  background: #d4a96a;
+  color: #fff;
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+/* Services */
+#services {
+  background: #2c1810;
+  color: #fff;
+  max-width: 100%;
+  padding: 60px 20px;
+}
+
+#services h2 {
+  color: #d4a96a;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 25px;
+  max-width: 1100px;
+  margin: 40px auto 0;
+}
+
+.service-item {
+  text-align: center;
+  padding: 25px 15px;
+  background: rgba(255,255,255,0.07);
+  border-radius: 14px;
+  transition: background 0.3s;
+}
+
+.service-item:hover {
+  background: rgba(212,169,106,0.2);
+}
+
+.service-item .icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.service-item h4 {
+  color: #d4a96a;
+  margin-bottom: 8px;
+  font-size: 1.05rem;
+}
+
+.service-item p {
+  color: #ccc;
+  font-size: 0.85rem;
+}
+
+/* Booking */
+#booking {
+  background: #fff7f0;
+  max-width: 100%;
+  padding: 60px 20px;
+}
+
+#booking h2 {
+  color: #2c1810;
+}
+
+form {
+  max-width: 500px;
+  margin: 30px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+form input,
+form select {
+  padding: 13px 16px;
+  border: 2px solid #e0d0c0;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: 'Tajawal', Arial, sans-serif;
+  outline: none;
+  transition: border 0.3s;
+}
+
+form input:focus,
+form select:focus {
+  border-color: #d4a96a;
+}
+
+form button {
+  padding: 14px;
+  background: #d4a96a;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  font-family: 'Tajawal', Arial, sans-serif;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #b8894a;
+}
+
+/* Footer */
+footer {
+  background: #2c1810;
+  color: #ccc;
+  text-align: center;
+  padding: 30px 20px;
+  line-height: 2;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .hero h1 { font-size: 2rem; }
+  nav ul { flex-wrap: wrap; gap: 5px; }
+  nav ul li a { padding: 6px 12px; font-size: 0.9rem; }
+}
